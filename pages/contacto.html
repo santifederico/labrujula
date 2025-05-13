@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Brújula</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <a href="../index.html" class="brand-link">
+                <img src="../assets/img/logo-base.png" alt="Logo de la Brújula" class="brand-img">
+                <span class="brand-text">La Brújula</span>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="navbar" id="navbar">
+                <li><a href="./que-hacemos.html">QUÉ HACEMOS</a></li>
+                <li><a href="./quienes-somos.html">QUIÉNES SOMOS</a></li>
+                <li><a href="./recursos.html">RECURSOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+            <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        </nav>
+
+        <div class="social">
+            <a href="https://www.facebook.com/santifederico.arq"><img src="../assets/icon/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://www.x.com/santiagof_arq"><img src="../assets/icon/x.png" alt="X"></a>
+            <a href="https://www.linkedin.com/in/santiago-federico/"><img src="../assets/icon/linkedin.png"
+                    alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/@santiagof83"><img src="../assets/icon/youtube.png" alt="YouTube"></a>
+        </div>
+        <hr class="header-separator">
+    </header>
+    <main>
+        <section class="bloque-negro">
+            <h2>SUMATE AL EQUIPO DE LA BRÚJULA</h2>
+            <p>Buscamos profesionales para el equipo de investigación de La Brújula con vocación por el análisis y la
+                investigación colaborativa, interesados en desarrollar instrumentos para la planificación, el
+                ordenamiento y el diseño territorial con énfasis en la participación pública, la transparencia y la
+                gobernabilidad a diversas escalas.</p>
+            <div class="form-container">
+                <form action="" method="POST">
+                    <p>NOMBRE</p>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                    <p>APELLIDO</p>
+                    <input type="text" name="apellido" placeholder="Ingrese su apellido">
+                    <p>PAÍS</p>
+                    <input type="text" name="pais" placeholder="Ingrese el país en el cual reside">
+                    <p>EMAIL</p>
+                    <input type="email" name="email" placeholder="Ingrese el país en el cual reside">
+                    <p>MENSAJE</p>
+                    <textarea name="message" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </section>
+        <section class="bloque-blanco">
+            <h2>SEGUINOS</h2>
+            <div class="block">
+                <div class="block-text">
+                    <h3>DIRECCIÓN</h3>
+                    <p>Ciudad Universitaria, Pabellón III, 4° piso,</p>
+                    <p>Ciudad Autónoma de Buenos Aires</p>
+                    <h3>TELÉFONO</h3>
+                    <p>+54.9.11XXXX.XXXX</p>
+                    <h3>CORREO ELECTRÓNICO</h3>
+                    <p>info@labrujula.com.ar</p>
+                </div>
+                <div class="block-image">
+                    <img src="../assets/img/mapa-ciudad.png" alt="Mapa de la ubicación del Centro de Investigación">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="item item-1">
+                <div class="footer-logo">
+                    <a href="../index.html" class="footer-logo-link">
+                        <img src="../assets/img/logo-base.png" alt="Logo de la Brújula" class="footer-logo">
+                        <span class="footer-logo-text">La Brújula</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item item-2">
+                <div>
+                    <p class="footer-seguinos">SEGUINOS</p>
+                </div>
+                <div class="footer-extras">
+                    <a href="https://www.facebook.com/santifederico.arq">
+                        <img src="../assets/icon/facebook.png" alt="Enlace a Facebook"></a>
+                    <a href="https://www.x.com/santiagof_arq">
+                        <img src="../assets/icon/x.png" alt="Enlace a X"></a>
+                    <a href="https://www.linkedin.com/in/santiago-federico/">
+                        <img src="../assets/icon/linkedin.png" alt="Enlace a Linkedin"></a>
+                    <a href="https://www.youtube.com/@santiagof83">
+                        <img src="../assets/icon/youtube.png" alt="Enlace a canal de YouTube"></a>
+                </div>
+                <div>
+                    <p class="mail">info@labrujula.com.ar</p>
+                </div>
+            </div>
+            <div class="item item-3">
+                <a href="./que-hacemos.html">QUÉ HACEMOS</a>
+                <p>INSTRUMENTOS</p>
+                <p>ABORDAJE</p>
+                <p>METODOLOGÍA</p>
+                <p>PROYECTOS</p>
+                <p>EXPERIENCIAS</p>
+            </div>
+            <div class="item item-4">
+                <a href="./quienes-somos.html">QUIÉNES SOMOS</a>
+                <p>EQUIPO</p>
+                <p>ALIANZAS</p>
+            </div>
+            <div class="item item-5">
+                <a href="./recursos.html">RECURSOS</a>
+                <p>LIBROS</p>
+                <p>PUBLICACIONES</p>
+                <p>ARTÍCULOS</p>
+            </div>
+            <div class="item item-6">
+                <a href="#">CONTACTO</a>
+                <p>SUMATE</p>
+                <p>SEGUINOS</p>
+            </div>
+            <div class="item item-7">
+                <p>© 2025 por La Brújula. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

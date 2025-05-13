@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Brújula</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <a href="#" class="brand-link">
+                <img src="./assets/img/logo-base.png" alt="Logo de la Brújula" class="brand-img">
+                <span class="brand-text">La Brújula</span>
+            </a>
+        </div>
+        <nav>
+            <ul class="navbar" id="navbar">
+                <li><a href="./pages/que-hacemos.html">QUÉ HACEMOS</a></li>
+                <li><a href="./pages/quienes-somos.html">QUIÉNES SOMOS</a></li>
+                <li><a href="./pages/recursos.html">RECURSOS</a></li>
+                <li><a href="./pages/contacto.html">CONTACTO</a></li>
+            </ul>
+            <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        </nav>
+        <div class="social">
+            <a href="https://www.facebook.com/santifederico.arq"><img src="./assets/icon/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://www.x.com/santiagof_arq"><img src="./assets/icon/x.png" alt="X"></a>
+            <a href="https://www.linkedin.com/in/santiago-federico/"><img src="./assets/icon/linkedin.png"
+                    alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/@santiagof83"><img src="./assets/icon/youtube.png" alt="YouTube"></a>
+        </div>
+        <hr class="header-separator">
+    </header>
+    <main>
+        <section class="bloque-negro">
+            <h1>La Brújula impulsa estrategias integrales de planificación territorial orientadas al desarrollo
+                sustentable y la inclusión social, articulando diagnóstico participativo, gestión del suelo y
+                formación para fortalecer políticas públicas con enfoque de derechos humanos.</h1>
+            <button class="button-orange">NUESTRO ABORDAJE</button>
+            <button class="button-orange">SOBRE NOSOTROS</button>
+        </section>
+        <section class="bloque-blanco">
+            <h2>EXPERIENCIAS Y PROYECTOS</h2>
+            <div class="container-map">
+                <img src="./assets/img/mapa-temp.jpg" alt="Mapa con experiencias y proyectos">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="item item-1">
+                <div class="footer-logo">
+                    <a href="#" class="footer-logo-link">
+                        <img src="./assets/img/logo-base.png" alt="Logo de la Brújula" class="footer-logo">
+                        <span class="footer-logo-text">La Brújula</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item item-2">
+                <div>
+                    <p class="footer-seguinos">SEGUINOS</p>
+                </div>
+                <div class="footer-extras">
+                    <a href="https://www.facebook.com/santifederico.arq">
+                        <img src="./assets/icon/facebook.png" alt="Enlace a Facebook"></a>
+                    <a href="https://www.x.com/santiagof_arq">
+                        <img src="./assets/icon/x.png" alt="Enlace a X"></a>
+                    <a href="https://www.linkedin.com/in/santiago-federico/">
+                        <img src="./assets/icon/linkedin.png" alt="Enlace a Linkedin"></a>
+                    <a href="https://www.youtube.com/@santiagof83">
+                        <img src="./assets/icon/youtube.png" alt="Enlace a canal de YouTube"></a>
+                </div>
+                <div>
+                    <p class="mail">info@labrujula.com.ar</p>
+                </div>
+            </div>
+            <div class="item item-3">
+                <a href="./pages/que-hacemos.html">QUÉ HACEMOS</a>
+                <p>INSTRUMENTOS</p>
+                <p>ABORDAJE</p>
+                <p>METODOLOGÍA</p>
+                <p>PROYECTOS</p>
+                <p>EXPERIENCIAS</p>
+            </div>
+            <div class="item item-4">
+                <a href="./pages/quienes-somos.html">QUIÉNES SOMOS</a>
+                <p>EQUIPO</p>
+                <p>ALIANZAS</p>
+            </div>
+            <div class="item item-5">
+                <a href="./pages/recursos.html">RECURSOS</a>
+                <p>LIBROS</p>
+                <p>PUBLICACIONES</p>
+                <p>ARTÍCULOS</p>
+            </div>
+            <div class="item item-6">
+                <a href="./pages/contacto.html">CONTACTO</a>
+                <p>SUMATE</p>
+                <p>SEGUINOS</p>
+            </div>
+            <div class="item item-7">
+                <p>© 2025 por La Brújula. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
