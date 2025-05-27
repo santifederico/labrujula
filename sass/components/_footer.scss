@@ -1,0 +1,96 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  background-color: $color-cyan;
+  color: $color-negro;
+  padding: 3.125rem 6.25rem;
+  padding-bottom: 1rem;
+
+  .item {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      font-family: $font-principal;
+      color: $color-negro;
+      font-weight: 700;
+    }
+
+    p {
+      font-family: $font-principal;
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    &.item-1 {
+      grid-row: 1;
+
+      .seguinos {
+        text-align: left;
+
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        .mail {
+          font-size: 0.75rem;
+          font-weight: 400;
+        }
+
+        .footer-extras {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+
+          img {
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+
+    &.item-3,
+    &.item-4,
+    &.item-5,
+    &.item-6 {
+      grid-row: 1 / 2;
+    }
+
+    &.item-7 {
+      grid-column: 1 / 6;
+      //grid-row: 2 / 3;
+
+      p {
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $color-negro;
+    }
+
+    &-text {
+      font-family: $font-principal;
+      font-size: 2rem;
+      font-weight: 300;
+      color: $color-negro;
+    }
+
+    img {
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+}

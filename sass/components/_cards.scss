@@ -1,0 +1,31 @@
+.cards-team {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-negro;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  align-items: center;
+
+  img {
+    width: 20rem;
+    object-fit: contain;
+    margin-bottom: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.container-team {
+  display: flex;
+  justify-content: center;
+  gap: 3.125rem;
+}

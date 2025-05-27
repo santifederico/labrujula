@@ -1,0 +1,251 @@
+$bp-tablet: 768px;
+$bp-mobile: 426px;
+
+@media (max-width: $bp-tablet) {
+  header {
+
+    .brand,
+    .social {
+      order: -1;
+      margin-bottom: 0.5rem;
+    }
+
+    .navbar {
+      order: 3;
+      width: 90%;
+      margin: 0 auto 0.5rem;
+      gap: 2rem;
+    }
+  }
+
+  footer {
+    .footer-container {
+      display: grid;
+      grid-template-columns: 1fr repeat(3, 1fr);
+      padding: 1rem 1rem;
+      padding-bottom: 1rem;
+
+      .item {
+        &.item-1 {
+          grid-column: 1 / 5;
+          grid-row: 1;
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 1rem;
+
+          .seguinos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+              margin-right: 1rem;
+            }
+
+            .footer-extras {
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        &.item-3,
+        &.item-4,
+        &.item-5,
+        &.item-6 {
+          grid-row: 2;
+        }
+
+        &.item-7 {
+          grid-column: 1 / 6;
+          grid-row: 3;
+
+          p {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  header {
+    .social {
+      display: none !important;
+    }
+
+    .navbar {
+      display: none;
+      flex-direction: column;
+      background-color: $color-naranja;
+      padding: 1rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+
+      &.active {
+        display: flex !important;
+      }
+    }
+
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+    }
+  }
+
+  footer {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      padding-top: 1rem;
+
+      .item {
+        &.item-1 {
+          display: flex;
+          flex-direction: column;
+
+          .footer-logo {
+            &-text {
+              font-size: 1.75rem;
+            }
+
+            img {
+              height: 1.75rem;
+            }
+          }
+
+          .seguinos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            
+
+            p {
+              font-size: 1rem;
+              font-weight: 400;
+              margin-right: 0;
+            }
+
+            .mail {
+              font-size: 0.75rem;
+              font-weight: 400;
+            }
+
+            .footer-extras {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 0;
+
+              img {
+                height: 1.5rem;
+                width: 1.5rem;
+              }
+            }
+          }
+        }
+
+        &.item-3,
+        &.item-4,
+        &.item-5,
+        &.item-6 {
+          display: none;
+        }
+
+        &.item-7 {
+          p {
+            font-size: 0.6rem;
+            margin-top: 0.1rem;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  /*
+  footer {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 1rem;
+      padding-bottom: 1rem;
+
+      .item {
+        a {
+          text-decoration: none;
+          font-family: $font-principal;
+          color: $color-negro;
+          font-weight: 700;
+        }
+
+        &.item-1 {
+          grid-row: 1;
+
+          .seguinos {
+            text-align: center;
+
+            p {
+              font-size: 1rem;
+              font-weight: 400;
+            }
+
+            .mail {
+              font-size: 0.75rem;
+              font-weight: 400;
+            }
+
+            .footer-extras {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                height: 1.5rem;
+                width: 1.5rem;
+              }
+            }
+          }
+        }
+
+        &.item-3,
+        &.item-4,
+        &.item-5,
+        &.item-6 {
+          display: none;
+        }
+
+        &.item-7 {
+          p {
+            font-size: 0.6rem;
+            //font-weight: 400;
+          }
+        }
+      }
+
+      .footer-logo {
+        &-text {
+          font-size: 1.75rem;
+        }
+
+        img {
+          height: 1.75rem;
+        }
+      }
+    }
+  }
+  */
+}

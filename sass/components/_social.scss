@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    height: 2rem;
+  }
+}
+
+.footer-extras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
+}

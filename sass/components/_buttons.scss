@@ -1,0 +1,21 @@
+.button-orange {
+  @include button($color-naranja, $color-negro);
+
+  a {
+    color: $color-negro;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-blanco;
+    }
+  }
+}
+
+.button-cv,
+.button-download {
+  @include button($color-naranja, $color-negro);
+
+  &:hover {
+    color: $color-blanco;
+  }
+}

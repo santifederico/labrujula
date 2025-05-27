@@ -1,0 +1,44 @@
+.bloque-negro,
+.bloque-blanco,
+.bloque-verde,
+.bloque-naranja,
+.bloque-cyan {
+  padding: 3.125rem 6.25rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1.875rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+    padding: 1.25rem 3.125rem;
+    background-image: url(../assets/icon/eliminar.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.bloque-negro { background-color: $color-negro; color: $color-blanco; }
+.bloque-blanco { background-color: $color-blanco; color: #333; }
+.bloque-verde { background-color: $color-verde; color: $color-blanco; }
+.bloque-naranja { background-color: $color-naranja; color: #333; }
+.bloque-cyan { background-color: $color-cyan; color: $color-negro; }

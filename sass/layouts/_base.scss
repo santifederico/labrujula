@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-principal;
+  color: $color-negro;
+  background-color: $color-blanco;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-principal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: $font-principal;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
