@@ -251,6 +251,47 @@ header .menu-toggle {
 }
 
 @media (max-width: 768px) {
+  .bloque-negro,
+  .bloque-blanco,
+  .bloque-verde,
+  .bloque-naranja,
+  .bloque-cyan {
+    padding: 1.5rem 3rem;
+  }
+  .bloque-negro h1,
+  .bloque-blanco h1,
+  .bloque-verde h1,
+  .bloque-naranja h1,
+  .bloque-cyan h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+  .bloque-negro h2,
+  .bloque-blanco h2,
+  .bloque-verde h2,
+  .bloque-naranja h2,
+  .bloque-cyan h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .bloque-negro p,
+  .bloque-blanco p,
+  .bloque-verde p,
+  .bloque-naranja p,
+  .bloque-cyan p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .bloque-negro li,
+  .bloque-blanco li,
+  .bloque-verde li,
+  .bloque-naranja li,
+  .bloque-cyan li {
+    padding: 1rem 2rem;
+  }
   header .brand,
   header .social {
     order: -1;
@@ -258,9 +299,38 @@ header .menu-toggle {
   }
   header .navbar {
     order: 3;
-    width: 90%;
+    width: 100%;
     margin: 0 auto 0.5rem;
-    gap: 2rem;
+    gap: 5rem;
+  }
+  .container-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-teamimg {
+    height: 90%;
+  }
+  .container-alliance {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-allianceimg {
+    height: 10%;
+  }
+  .instrumentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .instrumentos img {
+    height: 60%;
+    width: 60%;
+  }
+  .container-recursos {
+    display: flex;
+    flex-direction: column;
   }
   footer .footer-container {
     display: grid;
@@ -300,6 +370,48 @@ header .menu-toggle {
   }
 }
 @media (max-width: 426px) {
+  .bloque-negro,
+  .bloque-blanco,
+  .bloque-verde,
+  .bloque-naranja,
+  .bloque-cyan {
+    padding: 1rem 1rem;
+  }
+  .bloque-negro h1,
+  .bloque-blanco h1,
+  .bloque-verde h1,
+  .bloque-naranja h1,
+  .bloque-cyan h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+  .bloque-negro h2,
+  .bloque-blanco h2,
+  .bloque-verde h2,
+  .bloque-naranja h2,
+  .bloque-cyan h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .bloque-negro p,
+  .bloque-blanco p,
+  .bloque-verde p,
+  .bloque-naranja p,
+  .bloque-cyan p {
+    font-size: 0.75rem;
+  }
+  .bloque-negro li,
+  .bloque-blanco li,
+  .bloque-verde li,
+  .bloque-naranja li,
+  .bloque-cyan li {
+    font-size: 0.75rem;
+    padding: 0.5rem 0rem;
+    background-image: none;
+  }
   header .social {
     display: none !important;
   }
@@ -373,79 +485,6 @@ header .menu-toggle {
     font-size: 0.6rem;
     margin-top: 0.1rem;
   }
-  /*
-  footer {
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-
-      .item {
-        a {
-          text-decoration: none;
-          font-family: $font-principal;
-          color: $color-negro;
-          font-weight: 700;
-        }
-
-        &.item-1 {
-          grid-row: 1;
-
-          .seguinos {
-            text-align: center;
-
-            p {
-              font-size: 1rem;
-              font-weight: 400;
-            }
-
-            .mail {
-              font-size: 0.75rem;
-              font-weight: 400;
-            }
-
-            .footer-extras {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
-              img {
-                height: 1.5rem;
-                width: 1.5rem;
-              }
-            }
-          }
-        }
-
-        &.item-3,
-        &.item-4,
-        &.item-5,
-        &.item-6 {
-          display: none;
-        }
-
-        &.item-7 {
-          p {
-            font-size: 0.6rem;
-            //font-weight: 400;
-          }
-        }
-      }
-
-      .footer-logo {
-        &-text {
-          font-size: 1.75rem;
-        }
-
-        img {
-          height: 1.75rem;
-        }
-      }
-    }
-  }
-  */
 }
 .button-orange {
   background-color: #fe4f2d;
