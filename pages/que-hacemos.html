@@ -10,10 +10,11 @@
         content="metodología la brújula, intervenciones territoriales, diagnóstico territorial, planificación urbana, monitoreo proyectos urbanos, desarrollo urbano sostenible, enfoque derechos humanos, equidad territorial, inclusión en desarrollo territorial, barrios informales, asentamientos precarios, organizaciones comunitarias, gobiernos locales, herramienta para mejorar barrios informales, cómo planificar proyectos de desarrollo urbano, monitoreo de intervenciones territoriales con derechos humanos, metodología para desarrollo de asentamientos precarios">
     <title>QUE HACEMOS | La Brújula</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn body-fade">
     <header>
         <div class="brand">
             <a href="../index.html" class="brand-link">
@@ -53,14 +54,14 @@
             </div>
             <button class="button-orange"><a href="../index.html#titulo-experiencias">NUESTRA EXPERIENCIA</a></button>
         </section>
-        <section class="bloque-blanco">
+        <section class="bloque-blanco animate-on-scroll">
             <h2 id="titulo-abordaje">ABORDAJE</h2>
             <div class="abordaje">
                 <img src="../assets/img/metodologia.png" alt="Diagrama del abordaje de La Brújula" class="w-75">
             </div>
             <button class="button-orange"><a href="../index.html#titulo-experiencias">NUESTROS PROYECTOS</a></button>
         </section>
-        <section class="bloque-verde">
+        <section class="bloque-verde animate-on-scroll">
             <h2 id="titulo-metodologia">METODOLOGÍA</h2>
             <p>La Brújula es una metodología desarrollada para orientar intervenciones territoriales con un enfoque
                 de
@@ -182,6 +183,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".animate-on-scroll");
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated-visible", "animate__animated", "animate__fadeInUp");
+                        observer.unobserve(entry.target); // Solo una vez
+                    }
+                });
+            }, {
+                threshold: 0.1, // 10% del elemento visible
+            });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
     <script>
         function toggleMenu() {
             const navbar = document.getElementById('navbar');

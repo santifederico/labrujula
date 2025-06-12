@@ -8,9 +8,10 @@
     <meta name="keywords" content="equipo La Brújula, planificación territorial, enfoque de derechos, investigación urbana, asistencia técnica, capacitación territorial, conocimiento interdisciplinario, FADU-UBA, red de cooperación, organizaciones sociales, agencias internacionales, desarrollo urbano, equipo de expertos en planificación territorial, organización de desarrollo urbano sostenible, investigadores en derechos humanos y territorio, colaboración para proyectos de impacto territorial">
     <title>QUIENES SOMOS | La Brújula</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn body-fade">
     <header>
         <div class="brand">
             <a href="../index.html" class="brand-link">
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="bloque-blanco">
+        <section class="bloque-blanco animate-on-scroll">
             <h2 id="titulo-alianzas">ALIANZAS</h2>
             <p>La Brújula tiene su base en el programa IDUS (FADU-UBA) y articula una red activa de cooperación con
                 organizaciones sociales, agencias internacionales y actores del sector privado para el desarrollo
@@ -160,7 +161,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".animate-on-scroll");
 
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated-visible", "animate__animated", "animate__fadeInUp");
+                        observer.unobserve(entry.target); // Solo una vez
+                    }
+                });
+            }, {
+                threshold: 0.1, // 10% del elemento visible
+            });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
     <script>
         function toggleMenu() {
             const navbar = document.getElementById('navbar');

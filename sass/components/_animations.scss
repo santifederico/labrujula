@@ -1,0 +1,19 @@
+.h1-index {
+  --animate-duration: 6s;
+}
+
+.body-fade {
+  --animate-duration: 3s;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px); // para que suba al aparecer
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.animated-visible {
+  opacity: 1;
+  transform: translateY(0);
+  --animate-duration: 2s;
+}

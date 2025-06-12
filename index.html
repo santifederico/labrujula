@@ -8,13 +8,13 @@
         content="Descubre La Brújula: estrategias de planificación territorial para el desarrollo sostenible y la inclusión social con enfoque en derechos humanos. Conoce nuestros proyectos y servicios.">
     <meta name="keywords"
         content="planificación territorial, desarrollo sostenible, inclusión social, derechos humanos, gestión del territorio, diagnósticos participativos, políticas públicas, fortalecimiento institucional, capacitación, urbanismo, territorio, proyectos sociales, estrategias planificación territorial desarrollo sostenible, inclusión social enfoque derechos humanos, herramientas gestión del territorio, asesoría políticas públicas urbanas">
-    
-
     <title>INICIO | La Brújula</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn body-fade">
     <header>
         <div class="brand">
             <a href="#" class="brand-link">
@@ -42,8 +42,8 @@
         <hr class="header-separator">
     </header>
     <main>
-        <section class="bloque-negro">
-            <h1>La Brújula impulsa estrategias integrales de planificación territorial orientadas al desarrollo
+        <section class="bloque-index">
+            <h1 class="animate__animated animate__fadeIn h1-index">La Brújula impulsa estrategias integrales de planificación territorial orientadas al desarrollo
                 sustentable y la inclusión social, articulando diagnóstico participativo, gestión del suelo y
                 formación para fortalecer políticas públicas con enfoque de derechos humanos.</h1>
             <button class="button-orange"><a href="./pages/que-hacemos.html#titulo-abordaje">NUESTRO
@@ -51,7 +51,7 @@
             <button class="button-orange"><a
                     href="https://santifederico.github.io/plataforma-brujula">PLATAFORMA</a></button>
         </section>
-        <section class="bloque-blanco">
+        <section class="bloque-blanco animate-on-scroll">
             <h2 id="titulo-experiencias">EXPERIENCIAS Y PROYECTOS</h2>
             <div class="container-map">
                 <img src="./assets/img/mapa-temp.jpg" alt="Mapa con experiencias y proyectos">
@@ -132,6 +132,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".animate-on-scroll");
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated-visible", "animate__animated", "animate__fadeInUp");
+                        observer.unobserve(entry.target); // Solo una vez
+                    }
+                });
+            }, {
+                threshold: 0.1, // 10% del elemento visible
+            });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
     <script>
         function toggleMenu() {
             const navbar = document.getElementById('navbar');

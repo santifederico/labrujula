@@ -8,9 +8,10 @@
     <meta name="keywords" content="contacto La Brújula, unirse equipo investigación, colaboración planificación territorial, trabajo urbanismo, oportunidades laborales, dirección La Brújula, teléfono La Brújula, email La Brújula, redes sociales La Brújula, profesionales investigación, diseño territorial, cómo contactar La Brújula, enviar currículum La Brújula, oportunidades de empleo en planificación urbana, colaborar con proyectos de desarrollo territorial">
     <title>CONTACTO | La Brújula</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn body-fade">
     <header>
         <div class="brand">
             <a href="../index.html" class="brand-link">
@@ -61,9 +62,8 @@
                     <input type="submit" value="Enviar">
                 </form>
             </div>
-
         </section>
-        <section class="bloque-blanco">
+        <section class="bloque-blanco animate-on-scroll">
             <h2 id="titulo-seguinos">SEGUINOS</h2>
             <div class="block">
                 <div class="block-text">
@@ -155,7 +155,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".animate-on-scroll");
 
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated-visible", "animate__animated", "animate__fadeInUp");
+                        observer.unobserve(entry.target); // Solo una vez
+                    }
+                });
+            }, {
+                threshold: 0.1, // 10% del elemento visible
+            });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>

@@ -1,9 +1,11 @@
+.bloque-index,
 .bloque-negro,
 .bloque-blanco,
 .bloque-verde,
 .bloque-naranja,
 .bloque-cyan {
   padding: 3.125rem 6.25rem;
+  min-height: 80vh;
 
   h1 {
     font-size: 2rem;
@@ -37,6 +39,7 @@
   }
 }
 
+.bloque-index { background-color: $color-negro; color: $color-blanco; }
 .bloque-negro { background-color: $color-negro; color: $color-blanco; }
 .bloque-blanco { background-color: $color-blanco; color: #333; }
 .bloque-verde { background-color: $color-verde; color: $color-blanco; }

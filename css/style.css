@@ -174,13 +174,16 @@ header .menu-toggle {
   width: 70%;
 }
 
+.bloque-index,
 .bloque-negro,
 .bloque-blanco,
 .bloque-verde,
 .bloque-naranja,
 .bloque-cyan {
   padding: 3.125rem 6.25rem;
+  min-height: 80vh;
 }
+.bloque-index h1,
 .bloque-negro h1,
 .bloque-blanco h1,
 .bloque-verde h1,
@@ -191,6 +194,7 @@ header .menu-toggle {
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
 }
+.bloque-index h2,
 .bloque-negro h2,
 .bloque-blanco h2,
 .bloque-verde h2,
@@ -200,6 +204,7 @@ header .menu-toggle {
   font-weight: 400;
   margin-bottom: 1.875rem;
 }
+.bloque-index p,
 .bloque-negro p,
 .bloque-blanco p,
 .bloque-verde p,
@@ -209,6 +214,7 @@ header .menu-toggle {
   font-weight: 300;
   margin-bottom: 1.875rem;
 }
+.bloque-index li,
 .bloque-negro li,
 .bloque-blanco li,
 .bloque-verde li,
@@ -223,6 +229,11 @@ header .menu-toggle {
   background-position: left center;
   background-size: 20px;
   filter: brightness(0) invert(1);
+}
+
+.bloque-index {
+  background-color: #000;
+  color: #fff;
 }
 
 .bloque-negro {
@@ -486,6 +497,26 @@ header .menu-toggle {
     margin-top: 0.1rem;
   }
 }
+.h1-index {
+  --animate-duration: 6s;
+}
+
+.body-fade {
+  --animate-duration: 3s;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.animated-visible {
+  opacity: 1;
+  transform: translateY(0);
+  --animate-duration: 2s;
+}
+
 .button-orange {
   background-color: #fe4f2d;
   color: #000;

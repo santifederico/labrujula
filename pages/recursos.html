@@ -8,9 +8,10 @@
     <meta name="keywords" content="recursos La Brújula, libros planificación territorial, manuales urbanismo, participación pública, derecho a la ciudad, urbanismo habitacional, intervenciones barriales, desarrollo urbano, vivienda digna, diagnóstico territorial, soluciones urbanas, publicaciones urbanismo, manual de participación pública planificación territorial, libros sobre derecho a la ciudad y hábitat, recursos para la planificación urbana participativa, documentos sobre urbanismo habitacional">
     <title>RECURSOS | La Brújula</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn body-fade">
     <header>
         <div class="brand">
             <a href="../index.html" class="brand-link">
@@ -201,7 +202,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".animate-on-scroll");
 
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animated-visible", "animate__animated", "animate__fadeInUp");
+                        observer.unobserve(entry.target); // Solo una vez
+                    }
+                });
+            }, {
+                threshold: 0.1, // 10% del elemento visible
+            });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
     <script>
         function toggleMenu() {
             const navbar = document.getElementById('navbar');
