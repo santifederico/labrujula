@@ -30,7 +30,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #fe4f2d;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0rem;
   position: relative;
 }
 header .brand {
