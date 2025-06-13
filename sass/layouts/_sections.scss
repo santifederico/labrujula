@@ -1,5 +1,7 @@
 .bloque-index,
+.bloque-instrumentos,
 .bloque-negro,
+.bloque-abordaje,
 .bloque-blanco,
 .bloque-verde,
 .bloque-naranja,
@@ -15,6 +17,12 @@
   }
 
   h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+  }
+
+  h4 {
     font-size: 1.7rem;
     font-weight: 400;
     margin-bottom: 1.875rem;
@@ -37,11 +45,109 @@
     background-size: 20px;
     filter: brightness(0) invert(1);
   }
+  iframe {
+    padding: 0rem;
+  }
 }
 
-.bloque-index { background-color: $color-negro; color: $color-blanco; }
-.bloque-negro { background-color: $color-negro; color: $color-blanco; }
-.bloque-blanco { background-color: $color-blanco; color: #333; }
-.bloque-verde { background-color: $color-verde; color: $color-blanco; }
-.bloque-naranja { background-color: $color-naranja; color: #333; }
-.bloque-cyan { background-color: $color-cyan; color: $color-negro; }
+.bloque-index {
+  background-image: url('../assets/img/fondo (6).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: $color-negro;
+  color: $color-blanco;
+
+  .h1-blanco {
+    color: $color-blanco;
+  }
+
+  img {
+    filter: invert(1);
+  }
+}
+
+.bloque-instrumentos {
+  background-color: $color-negro;
+  color: $color-blanco;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .image-instrumentos {
+    width: 15rem;
+  }
+}
+
+.bloque-abordaje {
+  
+  h2 {
+    font-size: 2rem;
+  }
+
+  .accordion {
+    .accordion-item {
+      border: 1px solid $accordion-border;
+      background-color: $accordion-bg;
+
+      .accordion-header {
+        .accordion-button {
+          font-family: $font-principal;
+          color: $color-negro;
+          background-color: lighten($accordion-bg, 5%);
+
+          &:hover {
+            background-color: lighten($accordion-bg, 10%);
+          }
+
+          &:not(.collapsed) {
+            color: $color-negro;
+            background-color: lighten($accordion-bg, 15%);
+            box-shadow: none;
+          }
+        }
+      }
+
+      .accordion-body {
+        font-family: $font-principal;
+        color: $color-negro;
+        background-color: $color-blanco;
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.bloque-negro {
+  background-color: $color-negro;
+  color: $color-blanco;
+}
+
+.bloque-blanco {
+  background-color: $color-blanco;
+  color: #333;
+}
+
+.bloque-verde {
+  background-color: $color-verde;
+  color: $color-blanco;
+}
+
+.bloque-naranja {
+  background-color: $color-naranja;
+  color: #333;
+}
+
+.bloque-cyan {
+  background-color: $color-cyan;
+  color: $color-negro;
+}

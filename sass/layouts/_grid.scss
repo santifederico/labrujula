@@ -1,13 +1,12 @@
-.container-map {
-  display: flex;
-  justify-content: center;
-
+.instrumentos {
+  justify-content: left;
   img {
-    width: 90%;
+    height: 100px;
+    margin-bottom: 1rem;
   }
 }
 
-.instrumentos,
+
 .container-team {
   display: flex;
   justify-content: center;
